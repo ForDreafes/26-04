@@ -2,4 +2,5 @@
 
 	include("funcao.php");
 
-	$sort[] = sorteaTudo();
+	$sort = preco();
+	print($sort. "\n");

@@ -18,8 +18,10 @@
 				}while ($qntNum < 6 || $qntNum > 15);
 			break;
 			case 2:
+				do{
 				print("Quantos números seram sorteados ?\n");
 				$qntNum = fgets(STDIN);
+				}while ($qntNum < 5 || $qntNum > 15);
 			break;
 			case 3:
 				print("Quantos números seram sorteados ?\n");
@@ -80,4 +82,87 @@
 			}
 		}
 		return($numMega);
+	}
+
+	function preco(){
+		$opcao = menu();
+	if ($opcao[1] == 1) {
+			if($opcao[0] == 6) {
+				$preco = 3.50 ;
+			}elseif($opcao[0] == 7) {
+				$preco = 24.50;
+			}elseif($opcao[0] == 8) {
+				$preco = 98.00;
+			}elseif($opcao[0] == 9) {
+				$preco = 294.00;
+			}elseif($opcao[0] == 10) {
+				$preco = 735.00;
+			}elseif($opcao[0] == 11) {
+				$preco = 1617.00;
+			}elseif($opcao[0] == 12) {
+				$preco = 3234.00;
+			}elseif($opcao[0] == 13) {
+				$preco = 6006.00;
+			}elseif($opcao[0] == 14) {
+				$preco = 10510.50;
+			}elseif($opcao[0] == 15) {
+				$preco = 17517.50;
+			}
+	}elseif($opcao[1] == 2) {
+			}if($opcao[0] == 5) {
+				$preco = 1.50;
+			}elseif($opcao[0] == 6) {
+				$preco = 9.00;
+			}elseif($opcao[0] == 7) {
+				$preco = 31.50;
+			}elseif($opcao[0] == 8) {
+				$preco = 84.00;
+			}elseif($opcao[0] == 9) {
+				$preco = 189.00;
+			}elseif($opcao[0] == 10) {
+				$preco = 378.00;
+			}elseif($opcao[0] == 11) {
+				$preco = 693.00;
+			}elseif($opcao[0] == 12) {
+				$preco = 1188.00;
+			}elseif($opcao[0] == 13) {
+				$preco = 1930.00;
+			}elseif($opcao[0] == 14) {
+				$preco = 3003.00;
+			}elseif($opcao[0] == 15) {
+				$preco = 4504.50;
+			}
+			/*
+	elseif($opcao[1] == 3) {
+			}if($opcao[0] == 5) {
+				$preco = 1.50;
+			}elseif($opcao[0] == 6) {
+				$preco = 9.00;
+			}elseif($opcao[0] == 7) {
+				$preco = 31.50;
+			}elseif($opcao[0] == 8) {
+				$preco = 84.00;
+			}elseif($opcao[0] == 9) {
+				$preco = 189.00;
+			}elseif($opcao[0] == 10) {
+				$preco = 378.00;
+			}elseif($opcao[0] == 11) {
+				$preco = 693.00;
+			}elseif($opcao[0] == 12) {
+				$preco = 1188.00;
+			}elseif($opcao[0] == 13) {
+				$preco = 1930.00;
+			}elseif($opcao[0] == 14) {
+				$preco = 3003.00;
+			}elseif($opcao[0] == 15) {
+				$preco = 4504.50;
+			}
+			*/
+	elseif($opcao[1] == 3){
+		$preco = 1.50;
+	}
+	elseif($opcao[1] == 4) {
+				# code...
+			}		
+		return($preco);
 	}
